@@ -16,7 +16,7 @@ public class Hedgehog {
 
     public void speak(String says) {
         if (says.isEmpty() == true) {
-            System.out.println("Olen " + name + " ja ikäni on " + age + ", mutta antaisitko silti syötteen?");
+            System.out.println("Olen " + name + " ja ikäni on " + age + " vuotta, mutta antaisitko silti syötteen?");
         } else {
             System.out.println(name + ": " + says);
         }
