@@ -14,7 +14,7 @@ public class App {
         Storage storage = new Storage();
 
         while(!exit) {
-            System.out.println("1) Luo uusi kulkuneuvo, 2) Listaa kulkuneuvot, 3) Aja autoja, 4) Lennä lentokoneita, 5) Seilaa laivoja, 0) Lopeta ohjelma");
+            System.out.println("1) Luo uusi kulkuneuvo, 2) Listaa kulkuneuvot 3) Aja autoja, 4) Lennä lentokoneita, 5) Seilaa laivoja, 0) Lopeta ohjelma");
 
             if (sc.hasNext()) {
                 int i = 0;
@@ -48,10 +48,13 @@ public class App {
                             storage.listVehicles();
                             break;
                         case 3:
+                            storage.driveCars();
                             break;
                         case 4:
+                            storage.flyPlanes();
                             break;
                         case 5:
+                            storage.sailShips();
                             break;
                         case 0:
                             System.out.println("Kiitos ohjelman käytöstä.");

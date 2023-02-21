@@ -18,8 +18,31 @@ public class Storage {
         for(Vehicle vehicle : vehicles) {
             System.out.println(vehicle.getType() + ": " + vehicle.getManufacturer() + " " + vehicle.getModel());
             vehicle.getEngine();
-            System.out.println("Huippunopeus: " + vehicle.getMaxSpeed() + "km/h");
-            System.out.println();
+            System.out.println("Huippunopeus: " + vehicle.getMaxSpeed() + "km/h\n");
+        }
+    }
+
+    public void driveCars() {
+        for(Vehicle vehicle : vehicles) {
+            if (vehicle instanceof Car) {
+                ((Car) vehicle).drive();
+            }
+        }
+    }
+
+    public void flyPlanes() {
+        for(Vehicle vehicle : vehicles) {
+            if (vehicle instanceof Plane) {
+                ((Plane) vehicle).fly();
+            }
+        } 
+    }
+
+    public void sailShips() {
+        for(Vehicle vehicle : vehicles) {
+            if (vehicle instanceof Ship) {
+                ((Ship) vehicle).sail();
+            }
         }
     }
 }

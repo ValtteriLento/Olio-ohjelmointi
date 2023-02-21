@@ -8,7 +8,7 @@ public class Ship extends Vehicle {
     }
 
     public void sail() {
-    
+        System.out.println(manufacturer + " " + model + " seilaa merten ääriin!");
     }
     
 }
