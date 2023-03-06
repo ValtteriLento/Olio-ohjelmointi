@@ -72,7 +72,7 @@ public class App {
                             course = gifu.getCourse(i);
                             enrollments = gifu.getEnrollments(course);
                             for(Enrollment enrollment : enrollments) {
-                                System.out.println("Anna arvosan opiskelijalle " + enrollment.getStudent().getInformation());
+                                System.out.println("Anna arvosana opiskelijalle " + enrollment.getStudent().getInformation());
                                 int grade = Integer.parseInt(sc.nextLine());
                                 enrollment.gradeCourse(grade);
                             }
