@@ -37,7 +37,7 @@ public class App {
                             String courseId = sc.nextLine();
                             System.out.println("Anna kurssin maksimi opiskelijamäärä:");
                             int courseMaxNumberOfStudents = Integer.parseInt(sc.nextLine());
-                            course = new Course(courseMaxNumberOfStudents, courseName, courseId);
+                            course = new Course(courseName, courseId, courseMaxNumberOfStudents);
                             gifu.addCourse(course);
                             break;
                         case 2:
