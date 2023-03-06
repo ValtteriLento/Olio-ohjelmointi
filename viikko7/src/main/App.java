@@ -95,7 +95,7 @@ public class App {
                             enrollments = gifu.getEnrollments(student);
                             System.out.println("Opiskelijan " + student.getInformation() + " arvosanat:");
                             for(Enrollment enrollment : enrollments) {
-                                System.out.println(enrollment.getCourse().getInformation() + ", arvosana: "+ enrollment.getGrade());
+                                System.out.println(enrollment.getCourse().getInformation() + ", arvosana: " + enrollment.getGrade());
                             }
                             break;
                         case 9:
